@@ -1,0 +1,36 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Ecopi@185
+      - MSSQL_PID=Express
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    networks:
+      - backend
+    restart: unless-stopped
+
+  mongodb:
+    image: mongo:6.0
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  sqlserver_data:
+    driver: local
+  mongodb_data:
+    driver: local
+
+networks:
+  backend:
+    driver: bridge
