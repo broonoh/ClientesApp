@@ -1,0 +1,110 @@
+# Compilados do .NET
+bin/
+obj/
+
+# Logs
+*.log
+*.tlog
+
+# Rider e IDEs JetBrains
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+.vscode/*
+
+# Visual Studio
+.vs/
+*.vscode/*
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+.vscode/
+.vscode/*
+
+# Diretório de pacotes do NuGet
+*.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Arquivos de backup
+*.bak
+*.orig
+*.rej
+
+# Arquivos gerados automaticamente por build
+*.dll
+*.exe
+*.pdb
+*.cache
+*.config
+*.csproj.user
+
+# Arquivos de cache do Rider
+.idea/
+.idea/*workspace.xml
+.idea/*tasks.xml
+.idea/*dictionaries
+.idea/*module.xml
+
+# Arquivos de configuração do ambiente de desenvolvimento local
+launchSettings.json
+
+# Diretórios de publicação
+publish/
+
+# Arquivos gerados por debug/release
+*.dbg
+*.ipch
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.sqlite
+*.sql
+*.cache
+
+# Arquivos de configuração temporários do Visual Studio
+.vs/
+.vs/*
+
+# Arquivos temporários do sistema
+*.swp
+*~
+*.tmp
+*.temp
+
+# Arquivos do NuGet
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Arquivos de configuração de ambiente para Docker
+docker-compose.yml
+docker-compose.override.yml
+
+# Arquivos do Node.js para pacotes front-end (se aplicável)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Arquivos para ambientes Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Arquivos de cache do macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
